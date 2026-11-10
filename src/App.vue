@@ -3,7 +3,6 @@ import Section from './components/Section.vue'
 import Entry from './components/Entry.vue'
 import Highlight from './components/Highlight.vue'
 import ThemeToggle from './components/ThemeToggle.vue'
-import LineTrace from './components/LineTrace.vue'
 import { profile, links, work, projects, stack, education } from './profile'
 
 const year = new Date().getFullYear()
@@ -12,7 +11,6 @@ const delay = (i) => ({ '--d': `${i * 70}ms` })
 </script>
 
 <template>
-  <LineTrace />
 
   <main class="mx-auto max-w-3xl px-6 py-20 sm:py-28">
     <header class="rise flex items-start justify-between gap-6" :style="delay(0)">

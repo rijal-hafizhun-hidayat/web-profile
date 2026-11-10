@@ -29,26 +29,6 @@
   .text-accent {
     color: var(--accent);
   }
-  /* Backdrop trail. Opacity differs per theme because the same green
-     sits much heavier on white than it does on near-black. The fade is
-     the reset between runs. */
-  .trace {
-    /* White on near-black, per the reference. Light mode takes the
-       mirror of that rather than literal white, which would be an
-       invisible line on a white page. */
-    color: var(--color-neutral-900);
-    opacity: 0.38;
-    transition: opacity 800ms ease-out;
-  }
-  .dark .trace {
-    color: #fff;
-    opacity: 0.55;
-  }
-  /* The segment being drawn right now, so the head of the line reads as
-     leading the trail rather than being part of it. */
-  .trace-head {
-    opacity: 0.55;
-  }
   .rise {
     opacity: 0;
     animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
